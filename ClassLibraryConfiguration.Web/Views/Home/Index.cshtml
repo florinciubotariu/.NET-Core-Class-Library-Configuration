@@ -1,0 +1,19 @@
+﻿@model ClassLibraryConfiguration.Web.Models.ConfigurationExampleModel
+
+@{
+  ViewData["Title"] = "Index";
+}
+
+<div class="col-md-12">
+  <div class="col-md-6">
+    <h2>Connection Strings Configuration</h2>
+    Default Connection: @Model.ConnectionStringsConfig.DefaultConnection
+  </div>
+  <div class="col-md-6">
+    <h2>SMTP Configuration</h2>
+    Server: @Model.SmtpConfig.Server <br/>
+    User: @Model.SmtpConfig.User <br/>
+    Pass: @Model.SmtpConfig.Pass <br/>
+    Port: @Model.SmtpConfig.Port
+  </div>
+</div>
